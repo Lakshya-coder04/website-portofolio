@@ -153,6 +153,13 @@ body {
 }
 
 /* my tech stack */
+.my-tech h1 {
+  border-bottom: 4px solid #222;
+  width: fit-content;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
 .my-tech-stack {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -183,8 +190,10 @@ body {
 }
 
 .portfolio-section h1 {
-  font-size: 40px;
+  border-bottom: 4px solid #222;
+  width: fit-content;
   padding: 10px 0;
+  margin: 20px 0;
 }
 
 .project-grid {
