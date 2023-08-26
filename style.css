@@ -163,7 +163,7 @@ body {
 .my-tech-stack {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
+  gap: 20px;
   justify-items: center;
   align-items: center;
 }
@@ -180,7 +180,7 @@ body {
   transform: scale(1.8); /* Adjust the zoom level as needed */
 }
 .tech:nth-child(8) img {
-  transform: scale(1.5); /* Adjust the zoom level as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
 }
 
 /* MY WORK STYLING */
