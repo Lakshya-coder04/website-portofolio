@@ -15,6 +15,7 @@ function disableDark() {
     allDivs[index].classList.remove('dark-mode');
   }
 }
+
 function toggleMode() {
   const iconSun = document.getElementById('icon-sun');
 
