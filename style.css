@@ -198,7 +198,7 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
 }
 
@@ -215,7 +215,8 @@ body {
 .project-card img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #222;
+  border: none;
+  outline: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
   cursor: pointer;
@@ -229,6 +230,10 @@ body {
   font-weight: 200;
   margin: 1rem 0;
   color: #222;
+}
+
+#link-to-website {
+  cursor: pointer;
 }
 
 .project-card p {
