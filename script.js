@@ -3,8 +3,10 @@ function enableDark() {
 
   for (let index = 0; index < allDivs.length; index++) {
     const element = allDivs[index];
-    allDivs[index].classList.add('dark-mode');
+    allDivs[index].classList.add('darkMode');
   }
+  // document.body.classList.add('darkMode');
+  // sdocument.querySelector('.sticky').setAttribute('id', 'darkMode-sticky');
 }
 
 function disableDark() {
@@ -12,8 +14,10 @@ function disableDark() {
 
   for (let index = 0; index < allDivs.length; index++) {
     const element = allDivs[index];
-    allDivs[index].classList.remove('dark-mode');
+    allDivs[index].classList.remove('darkMode');
   }
+  document.body.classList.remove('darkMode');
+  document.querySelector('.sticky').setAttribute('id', 'darkMode-sticky');
 }
 
 function toggleMode() {

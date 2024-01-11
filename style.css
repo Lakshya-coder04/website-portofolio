@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.darkMode {
+  background-color: #222;
+  color: #e5e4df;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #e5e4df;
@@ -16,15 +21,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 20px;
-  margin: 10px 20px;
+  align-items: column;
+  padding: 20px 20px;
   animation: moveInDown 1s;
+  pointer-events: none;
 }
 
 .header.sticky {
   position: fixed;
   bottom: 5px;
-  left: 50%; /* Move the element 50% from the left edge */
+  left: 50%;
   transform: translateX(-56%);
   width: fit-content;
   transition: 0.5s ease;
@@ -90,7 +96,7 @@ body {
 
 .content-introduction {
   padding: 100px 20px;
-  margin: 100px 20px;
+  margin: 100px 0;
   animation: moveInUp 1.4s ease-in;
 }
 
@@ -198,12 +204,12 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: transparent;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -214,6 +220,7 @@ body {
 }
 .project-card img {
   max-width: 100%;
+  filter: contrast(110%);
   height: auto;
   border: none;
   outline: none;
@@ -371,6 +378,7 @@ input[type='submit']:hover {
   }
 
   60% {
+    opacity: 0.5;
     transform: translateY(-10px);
   }
 
@@ -386,6 +394,7 @@ input[type='submit']:hover {
   }
 
   60% {
+    opacity: 0.5;
     transform: translateY(10px);
   }
 
@@ -414,7 +423,7 @@ input[type='submit']:hover {
   }
   .content-introduction {
     padding: 50px 20px;
-    margin: 50px 20px;
+    margin: 50px 0;
   }
 
   .content-introduction h1 {
