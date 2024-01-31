@@ -220,7 +220,7 @@ body {
 }
 .project-card img {
   max-width: 100%;
-  filter: contrast(110%);
+  filter: contrast(120%);
   height: auto;
   border: none;
   outline: none;
