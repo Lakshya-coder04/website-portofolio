@@ -86,6 +86,7 @@ body {
 .links a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .links:hover {
@@ -178,6 +179,7 @@ body {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
+  aspect-ratio: 7/7;
 }
 .tech:nth-child(2) img {
   transform: scale(1.8); /* Adjust the zoom level as needed */
